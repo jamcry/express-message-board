@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.single-msg {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px;
+}
+.single-msg .msg {
+  font-size: 16px;
+}
+
+.single-msg .usr {
+  text-align: right;
+  font-variant: small-caps;
+}
