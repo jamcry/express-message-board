@@ -1,11 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  ul.msg-list
-    each msg in messages
-       li.single-msg
-          p.msg #{msg.text}
-          p.usr #{msg.user}
-          small.date created at #{msg.added}
+  div.content
+    h1= title
+    p Welcome to #{title}
+    p This is a simple message board developed with Express.js.
+    a(href="/new")
+      b New Message
+    ul.msg-list
+      each msg in messages
+        li.single-msg
+            p.msg #{msg.text}
+            p.usr #{msg.user}
+            small.date created at #{msg.added}

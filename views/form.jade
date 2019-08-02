@@ -1,12 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  form(name="new-message", method="post")
-    div.input
-      label(for="username") Username
-      input(type="text", name="username", placeholder="Your username")
-      label(for="message") Message
-      input(type="text", name="message", placeholder="Your message")
-    div.actions
-      input(type="submit", value="Send")
+  div.content
+    h1= title
+    form(name="new-message", method="post", action="/new")
+      div.input
+        label(for="username") Username
+        input(type="text", name="username", placeholder="Your username")
+        label(for="message") Message
+        input(type="text", name="message", placeholder="Your message")
+      div.actions
+        input(type="submit", value="Send")
+    a(href="/")
+      b Back to Board
