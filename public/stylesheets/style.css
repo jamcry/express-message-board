@@ -21,3 +21,42 @@ a {
   text-align: right;
   font-variant: small-caps;
 }
+
+/* New message form styles */
+
+.input {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.input label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input input {
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #555;
+  font-size: 24px;
+  color: #eee;
+  padding: 5px;
+  margin-bottom: 7px;
+}
+.input input:focus {
+  box-shadow: 0 0 5px #1976D2;
+}
+.actions input[type="submit"] {
+  background: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 75px;
+  box-shadow: 0 0px 3px #333;
+  font-weight: bold;
+}
+.actions input[type="submit"]:hover {
+  background: #1976D2;
+}
